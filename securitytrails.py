@@ -21,7 +21,7 @@ args = parser.parse_args()
 
 accept = "application/json"
 
-APIKEY = os.getenv('APIKEY') #環境変数設定 e.g)windows:$env:APIKEY="yourapikey", bash: export APIKEY="yourapikey"  
+APIKEY = os.getenv('APIKEY') #setting env e.g)windows:$env:APIKEY="yourapikey", bash: export APIKEY="yourapikey"  
 if not APIKEY:
     print('[*] Please set your APIKEY in os environment.')
     exit()
